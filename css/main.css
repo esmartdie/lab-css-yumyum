@@ -1,1 +1,556 @@
-*, :before, :after {box-sizing:border-box;}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+/* Estilos base */
+body {
+    font-family: 'Intro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ff6347;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo- {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo- p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .mobile-icons {
+    display: none;
+}
+
+header .mobile-icons .icon img {
+    height: 30px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+}
+.order {
+    display: flex;
+    width: 100%;
+  }
+  
+  .order .left-side,
+  .order .right-side {
+    width: 50%;
+  }
+  
+  .order .left-side {
+    background-color: gray;
+  }
+  
+  .order .right-side {
+    background: linear-gradient(0deg, #74CC52 0%, #C0DA38 100%);
+    color: white;
+    padding: 6rem;
+  }
+  
+  .order .right-side h2 {
+    font-size: 2rem;
+    width: 14rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    line-height: 2.75rem;
+    font-weight: 800;
+  }
+  
+  .order form :first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .order form :nth-child(2) {
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .order form label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    height: 4rem;
+    max-width: 27rem;
+    min-width: 275px;
+  }
+  
+  .order .first-label {
+    border-bottom: 1px solid gray;
+  }
+  
+  .order form input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .order form label img {
+    width: 25px;
+    height: 25px;
+    filter: invert(35%) sepia(100%) saturate(3443%) hue-rotate(9deg)
+      brightness(102%) contrast(101%);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .order button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 800;
+  }
+
+/*How it works */ 
+
+.how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.75rem;
+}
+
+.how-it-works h2 {
+  margin-bottom: 5rem;
+}
+
+.how-it-works h2 {
+  font-family: "Intro", sans-serif;
+  font-weight: 900;
+  color: #ff6347;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.how-it-works .step,
+.feature-item {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+.how-it-works .step img {
+  max-width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.how-it-works .step .step-content {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 1.5rem;
+}
+
+.how-it-works .step h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.how-it-works .step .numbers {
+  font-weight: 400;
+  margin-right: 0.75rem;
+}
+
+.how-it-works .step p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  color: gray;
+}
+
+/*Dishes*/
+.dishes-section {
+    background-color: beige;
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .dish-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* Adjust as needed */
+    background-color: white; /* Set the background color of the card */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 300px; /* Ensures all cards have at least this width */
+    max-width: 300px; /* Ensures all cards do not exceed this width */
+  }
+  
+  .grey-placeholder {
+    height: 200px;
+    background-color: lightgrey;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    flex-grow: 1; 
+  }
+
+  .title {
+    margin-bottom: auto;
+  }
+  
+  .title h4 {
+    font-weight: bold;
+  }
+  
+  .title h5 {
+    font-weight: normal;
+    font-size: 0.8em;
+  }
+  
+  .price-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+
+  .price-button::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    height: 2px;
+    background-color: beige;
+  }
+  
+  .price-button > button {
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(94, 175, 54);
+    font-size: 0.8em;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .rating div {
+    display: flex;
+  }
+  
+  .rating p {
+    margin: 0;
+  }
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Orange Banner */
+
+
+.orange-banner {
+    background: linear-gradient(to bottom, #FB7244, #EA3A4E);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 500px;
+  }
+  
+  .orange-banner .feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .orange-banner .feature-item img {
+    fill: #f4a300;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 2rem;
+    object-fit: contain;
+  }
+  
+  .orange-banner .feature-item-img-background {
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .orange-banner .feature-item h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 3rem;
+  }
+  
+  .orange-banner .feature-item p {
+    max-width: 12rem;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .cuisine-section .card-container .dish-card  {
+    display: flex !important;
+    height: 400px !important;
+  
+  }
+
+  .dish-card .content {
+    align-self: flex-start ;
+    flex: none ;
+    height: fit-content ; 
+    background-color: white;
+    padding: 10px;
+    overflow: auto ;
+}
+
+  /* black banner*/
+
+  .banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 30px;
+  }
+
+
+.featured-section .price-button button {
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(94, 175, 54);
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+
+  /*footer*/
+  links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 0rem;
+  }
+  
+  .links {
+    color: black;
+    text-align: left;
+    padding: 20px;
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    padding: 10px;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+  }
+  
+  .links-section h3 {
+    font-weight: bold;
+  }
+  
+  .links-section a {
+    color: gray;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  footer .hazy-theme {
+    color: #83c04d;
+  }
+  
+  footer .footer-links a {
+    padding-right: 30px;
+    color: black;
+    text-decoration: none;
+  }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    header .mobile-icons {
+        display: flex;
+        align-items: center;
+    }
+    .order {
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .order .left-side,
+      .order .right-side {
+        width: 100%;
+    }
+    
+    .order .left-side {
+        height: 400px;
+    }
+    
+    .order .right-side {
+        padding: 2rem;
+    }
+
+    .how-it-works .step,
+    .feature-item {
+      display: block;
+      width: 100%;
+    }
+  
+    .order-section,
+    .how-it-works {
+      padding: 20px 10px;
+    }
+  
+    .how-it-works .step .step-content {
+      max-width: 66%;
+    }
+
+    .orange-banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        gap: 0;
+      }
+    
+      .orange-banner .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .orange-banner .feature-item img {
+        height: 60px;
+        width: 60px;
+      }
+    
+      .orange-banner .feature-item h3 {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        text-align: center;
+      }
+    
+      .orange-banner .feature-item p {
+        margin-top: 1.25rem;
+        justify-content: flex-end;
+        text-align: center;
+      }
+
+      .links-section {
+        flex-direction: column;
+      }
+
+      .links-section .links {
+        width: 100%;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+      }
+
+      .footer-section {
+        flex-direction: column;
+      }
+
+}
